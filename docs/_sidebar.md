@@ -1,5 +1,5 @@
-- JavaScript
-  - [啥也不是](closure.md "啥也不是")
+- typescript
+  - [啥也不是](./typescript/closure.md "啥也不是")
   - [还没写](prototype.md "还没写")
 
 - CSS
