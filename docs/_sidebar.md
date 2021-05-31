@@ -1,5 +1,5 @@
 - typescript
-  - [啥也不是](typescript/closure.md "啥也不是")
+  - [数据类型](typescript/dataType.md "数据类型")
   - [还没写](prototype.md "还没写")
 
 - webGl
