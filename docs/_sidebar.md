@@ -1,6 +1,5 @@
 - typescript
   - [数据类型](typescript/dataType.md "数据类型")
-  - [还没写](prototype.md "还没写")
 
 - webGl
   - [class_one](webGL/class1.md "class_one")
