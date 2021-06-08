@@ -9,3 +9,6 @@
 
 - js方法集
   - [前端多语言](some-function/language.md "前端多语言")
+
+- git使用
+  - [git命令](git/git.md "git命令")
