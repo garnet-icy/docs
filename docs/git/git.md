@@ -44,7 +44,7 @@
 
   git reset HEAD^ #撤销一次提交
 
-  git reset HEAD #恢复一次撤回
+  git revert HEAD #恢复一次撤回
 
 
 
