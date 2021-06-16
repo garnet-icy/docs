@@ -181,3 +181,132 @@ class Web extends Person{
 
 
 **多态**
+
+```父类中定义方法，子类中定义同名方法进行不同的实现```
+
+
+
+
+
+> 接口 对json对象的约束
+
+
+```普通接口```
+```ts
+
+  // 对一个方法进行约束
+  // 可使用‘?’修饰参数为非必需
+  interface params = {
+    name:string,
+    age?:number,
+  }
+
+  function returnInfo(param:params):void{
+    console.log(param.name+param.age)
+  }
+
+```
+
+```函数接口```
+
+
+```ts
+  interface encrypt {
+    (key:string,value:string):string
+  }
+
+  const md5:encrypt = function(key:string,value:string){
+    return someFunction(key,value)
+  }
+```
+
+
+
+```数组与对象的约束```
+
+```ts
+  // 数组的约束
+  interface userArr {
+    [index:number]:string
+  }
+
+  // 对对象的约束
+  interface userObj {
+    [index:string]:string
+  }
+
+
+  // 对类的约束
+  interface userClass {
+    name:string
+
+    eat(str:string):void
+  }
+
+    // user1的类实现此接口
+    class user1 implements userClass{
+      name:string
+      constractor(name:string){
+        this.name = name
+      }
+      eat(str:string){
+        console.log(this.name +'---'+ str)
+      }
+    }
+
+
+
+  // 对类的扩展，可以用接口类继承接口类
+  interface userClass {
+    name:string
+
+    eat(str:string):void
+  }
+
+  interface nameClass extends userClass {
+    work(str:string):void
+
+  }
+
+  // 单纯的接口实现
+  class Person implements nameClass{
+    // 必须有name属性，并且有eat与work方法
+  }
+
+  // 有继承也有实现
+  class Person extends userClass implements nameCalss{
+    constractor (name:string){
+      // 对于继承的父类中的属性必须使用super函数
+      super (name)
+    }
+
+    eat(){}
+    work(){}
+  }
+```
+
+
+> 泛型
+
+```泛型函数```
+```ts
+function getName<T>(value:T):T{
+  return value
+}
+
+console.log('getName<number>(123): ', getName<number>(123));
+console.log('getName<number>(123): ', getName<string>('asd'));
+```
+
+```泛型类```
+```ts
+class Test<T>{
+  constractor(name:T) {
+    this.name = name
+  }
+
+  work<T>(value:T){
+    return value
+  }
+}
+```

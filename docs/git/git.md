@@ -42,9 +42,9 @@
 
 
 
-  git reset HEAD^ #撤销一次提交
+  git reset HEAD^ #撤销一次提交,用于撤销本地的提交
 
-  git revert HEAD #恢复一次撤回
+  git revert HEAD #恢复一次撤回，将上上一次的提交重新提交一遍，用于覆盖上次的错误提交，适用于修改远程仓库的错误提交
 
 
 
@@ -76,6 +76,17 @@
   git push origin main:<newName> #在远程新建newName分支并将main分支上的提交推送到远程newName分支
 
   git push origin :main  #push为空时指删除远程的main分支
+
+
+
+
+  # git更换远程仓库地址
+  git remote rm origin
+  git remote add origin NEWURL
+
+
+
+  git log --oneline --graph    #单列显示，美化git log
 ```
 
 [git学习链接](https://learngitbranching.js.org)

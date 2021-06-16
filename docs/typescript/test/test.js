@@ -1,43 +1,68 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-// 类
-var Person = /** @class */ (function () {
-    function Person(n) {
-        this.name = n;
-    }
-    Person.prototype.work = function () {
-        console.log('类---' + this.name + ' works');
-    };
-    Person.run = function () {
-        console.log("I'm going");
-    };
-    return Person;
-}());
-var p = new Person('John');
-p.work();
-// 类的继承
-var Web = /** @class */ (function (_super) {
-    __extends(Web, _super);
-    function Web(n) {
-        return _super.call(this, n) || this; //super函数将参数传递到子类中
-    }
-    return Web;
-}(Person));
-var w = new Web('Jenny');
-w.work();
-// 直接调用的静态方法
-Web.run();
+// // 类
+// class Person{
+//   public name:string
+//   constructor(n:string){
+//     this.name = n
+//   }
+//   work(){
+//     console.log('类---'+this.name+' works')
+//   }
+//   static run(){
+//     console.log("I'm going")
+//   }
+// }
+// var p = new Person('John')
+// p.work()
+// // 类的继承
+// class Web extends Person{
+//   constructor(n:string){
+//     super(n) //super函数将参数传递到子类中
+//   }
+// }
+// let w = new Web('Jenny')
+// w.work()
+// // 直接调用的静态方法
+// Web.run()
+// class Futher {
+//     public age: number;
+//     constructor(age: number) {
+//         this.age = age
+//     }
+//     counts(): void {
+//         console.log(this.age)
+//     }
+// }
+// class children1 extends Futher {
+//     constructor(age: number) {
+//         super(age)
+//     }
+//     counts(): void {    /* 多态，重写方法不执行父类方法 */
+//         console.log(this.age - 1)
+//     }
+// }
+// class children2 extends Futher {
+//     constructor(age: number) {
+//         super(age)
+//     }
+//     counts(): void {
+//         console.log(this.age + 1)
+//     }
+// }
+// let c1 = new children1(12);
+// let c2 = new children2(12);
+// c1.counts()
+// c2.counts()
+// interface params  {
+//   name:string,
+//   age?:number,
+// }
+// function returnInfo(param:params):void{
+//   console.log(param.name+param.age)
+// }
+// returnInfo({name:'123'})
+function getName(value) {
+    return value;
+}
+console.log('getName<number>(123): ', getName(123));
+console.log('getName<number>(123): ', getName('asd'));
