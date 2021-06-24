@@ -8,7 +8,10 @@
   - [钩子函数](react/hooks.md "钩子函数")
 
 - js方法集
-  - [前端多语言](some-function/language.md "前端多语言")
+  - [前端多语言](functions/language.md "前端多语言")
 
 - git使用
   - [git命令](git/git.md "git命令")
+
+- electron部分配置
+  - [electron介绍](electron/intro.md "electron介绍")

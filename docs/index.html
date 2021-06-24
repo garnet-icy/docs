@@ -6,21 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css">
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: '',
+      logo: '/_media/claire.svg', // 自己的logo
+      name: '卡卡西摔跤',
+      repo: '', //右上角github地址
+      coverpage:true,
+      loadSidebar:'_sidebar.md',// true默认为sidebar.md
       loadSidebar: true,
       search:'auto',
       hideSidebar: false,
       auto2top:true,
       homepage:'home.md',
-      name: 'my-doc',
-      disqus: 'shortname'
+      disqus: 'shortname',
+      themeColor: '#C67553',
     }
   </script>
   <!-- Docsify v4 -->
