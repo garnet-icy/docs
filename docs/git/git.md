@@ -27,6 +27,8 @@
 
   git branch -f <某分支> <commit> #将某分支移动到commit的提交
 
+  git branch -D <分支名称>  #删除分支
+
 
 
   git cherry-pick <commit1> <commit2> #在当前分支上合并几个commit
