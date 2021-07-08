@@ -16,6 +16,9 @@
 
 - electron部分配置
   - [electron介绍](electron/intro.md)
+  - [electron方法](electron/function.md)
 
 - node
+  - [node概述](node/node.md)
   - [express](node/express.md)
+  - [包管理工具](node/npm.md)

@@ -26,16 +26,37 @@
 
 
 // 模拟询问 inquirer 库
-const inquirer = require('inquirer')
+// const inquirer = require('inquirer')
 
-var questions = [
-  {
-    type: 'input',
-    name: 'name',
-    message: "你叫什么名字?"
-  }
-]
+// var questions = [
+//   {
+//     type: 'input',
+//     name: 'name',
+//     message: "你叫什么名字?"
+//   }
+// ]
 
-inquirer.prompt(questions).then(answers => {
-  console.log(`你好 ${answers['name']}!`)
-})
+// inquirer.prompt(questions).then(answers => {
+//   console.log(`你好 ${answers['name']}!`)
+// })
+
+
+const fs = require('fs')
+
+// fs.open('./node_modules/.bin/cowsay','r',(err,fd) => {
+//   console.log(fd);
+// })
+
+// try {
+//   const fd = fs.openSync('./node_modules/.bin/cowsay', 'r')
+//   console.log(fd);
+// } catch (error) {
+//   console.log('sad');
+// }
+
+  // fs.stat('./node_modules/.bin/cowsay',(e,stats) => {
+  //   console.log(stats);
+  // })
+
+
+  console.log(Buffer);
