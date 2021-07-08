@@ -2,7 +2,7 @@
 > enum(一个名称集合，限制数据值只能在集合中找到)
 1. 使用方法
 
-    ```ts
+    ```js
       enum ShirTSize {
         XS,
         S,
@@ -30,7 +30,7 @@
     ```
 2. 枚举的双向映射
 
-    ```ts
+    ```js
     // 字符串枚举不能做双向映射
     enum days {
       a,
@@ -42,7 +42,7 @@
     ```
 
 3. 常量枚举
-    ```ts
+    ```js
     // 枚举前加const为常量枚举，不需要对象而需要对象的值
     // 常量枚举会在编译阶段被移除
     const enum colors{
@@ -71,7 +71,7 @@ let arr:[boolean,string,numer] = [false,'asd',123]
 
 
 > void 与 function
-```ts
+```js
   function run():void{
     // 无返回值
   }
@@ -125,7 +125,7 @@ let arr:[boolean,string,numer] = [false,'asd',123]
 
 
 > 类
-```ts
+```js
 class Person{
   name:string
   constructor(n:string){
@@ -141,7 +141,7 @@ p.work()
 ```
 
 **类的继承**
-```ts
+```js
 class Person{
   name:string
   constructor(n:string){
