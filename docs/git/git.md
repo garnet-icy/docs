@@ -89,6 +89,7 @@
 
 
   git log --oneline --graph    #单列显示，美化git log
+  git log <分支>    #远程分支log
 ```
 
 [git学习链接](https://learngitbranching.js.org)
