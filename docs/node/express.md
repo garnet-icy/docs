@@ -16,3 +16,7 @@
     }
 5. 可用'localhost:3000/api/hello'访问数据
 ```
+> express与koa 中间件对比
+
+![avatar](../image/express/express-vs-koa.jpg)
+
