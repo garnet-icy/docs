@@ -60,7 +60,17 @@ docker image load -i <url>  #导入镜像
 > 创建自己的镜像
 ```bash
 #目录下要包含Dockerfile文件和要创建镜像所依赖的文件
-docker image build -t <name>
-dicker run <name>
+docker image build -t <name> <path> #第一次执行时间较长
+docker run <name>
 ```
 
+
+> 上传dockerhub
+1. 更改命名规则，名称为 `dockerId/imageName`
+
+    docker image tag `oldName newName`
+
+2. 上传
+
+    docker login
+    docker image push `imageName`
