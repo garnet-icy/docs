@@ -17,6 +17,8 @@ docker container rm <name/id>  #删除容器
 docker container rm $(docker container ps -qa)  #批量删除容器
 
 docker container rm <name/id> -f  #强制删除正在运行的容器
+
+docker system prune -f #清除不使用的镜像
 ```
 
 > docker端口映射
