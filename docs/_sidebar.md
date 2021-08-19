@@ -3,9 +3,9 @@
 
 
 - docker
-  - [dockerfile](http/dockerfile-info.md)
-  - [docker介绍](http/header.md)
-  - [docker命令](http/order.md)
+  - [dockerfile](docker/dockerfile-info.md)
+  - [docker介绍](docker/header.md)
+  - [docker命令](docker/order.md)
 
 - http
   - [缓存](http/cache.md)
