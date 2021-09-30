@@ -16,6 +16,23 @@
 3. 打包后出现请求路径为app://协议问题
 
 
+4. 找不到require，在vue.config.js中添加
+```json
+pluginOptions: {
+  electronBuilder: {
+    nodeIntegration:true, √
+  }
+}
+
+// background.js
+webPreferences: {
+  // 跨域
+  webSecurity: false,
+  enableRemoteModule: !!process.env.IS_TEST,
+  nodeIntegration: true, √
+  contextIsolation: false √
+}
+```
 
 
 

@@ -15,6 +15,10 @@
   - [compositionAPI](vue3/compositionAPI.md)
   - [vite](vue3/vite.md)
 
+- UI框架
+  - element-ui
+    [upload](ui/element-ui/upload.md)
+
 - 小知识点
   - [宏任务微任务](tips/microtask-macrotask.md)
   - [几种异步处理](tips/promise-async.md)
