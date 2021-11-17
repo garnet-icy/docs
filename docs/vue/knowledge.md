@@ -31,3 +31,15 @@
   // 使用
   this.$store.name.state.XXX
 ``` 
+
+> 路由
++ `$route` 当前路由的信息
++ `$router` 全局所有路由的信息，整个应用只有一个router
++ router.js中children.path前不需要加“/”
++ router-link跳转时写路由地址需要写为多级，用“/”隔开，前面也要加“/”
++ 路由传参
+  ```js
+    // 路由跳转路径后面用问号拼接（?id=1&name='zhangsan'）
+    // 接收
+      this.$router.query.name...
+  ```
