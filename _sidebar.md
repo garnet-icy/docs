@@ -10,10 +10,10 @@
 - http
   - [缓存](http/cache.md)
 
-- vue3
-  - [方法集](vue3/functions.md)
-  - [compositionAPI](vue3/compositionAPI.md)
-  - [vite](vue3/vite.md)
+- vue
+  - [vue2基础知识](vue/vue3/knowledge.md)
+  - [vue3基础知识](vue/vue2/knowledge.md)
+  - [vite](vue/vue3/vite.md)
 
 - UI框架
   - element-ui
