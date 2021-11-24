@@ -29,3 +29,13 @@ filters:{
     }
   }
 ```
+
+> 路由守卫
++ 路由钩子函数
+```js
+  1、全局钩子函数（beforeEach、afterEach) //所有路由跳转使用 router.beforeEach(()=>{})
+
+　2、路由独享的钩子函数（beforeEnter）//单个路由内使用，无后置路由守卫
+
+　3、组件内钩子函数（beforeRouterEnter、beforeRouterUpdate、beforeRouterLeave）//单个组件内检测到
+```
