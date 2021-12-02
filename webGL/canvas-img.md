@@ -43,3 +43,55 @@ this.blackWhiteImageData.forEach((imageItem, index) => {
   }
 })
 ```
+
+## canvas根据点画框
+```html
+<canvas class="drawFrameInfoArea"
+  @mousedown="handleMousedown"
+></canvas>
+```
+```js
+this.canvasArea = document.querySelector('.drawFrameInfoArea')
+// 定义画线方法
+drawLine(){
+  // 使用beginPath防止清空画布后再出现之前的线条
+  this.contextArea.beginPath()
+  this.contextArea.moveTo(x1,y1)
+  this.contextArea.lineTo(x2,y2)
+  this.contextArea.closePath()
+  this.contextArea.stroke()
+}
+handleMousedown(){
+  // 找个空数组push点的数组
+  this.coordArr.push([e.layerX,e.layerY])
+  // 判断这是一个框的第几个点
+  let point = this.coordArr.length%4
+  // 保存数组length
+  let length = this.coordArr.length
+  switch(point){
+    // 四的倍数的点
+    case 0:
+      if(this.coordArr.length!==0){
+        // 连接第四个点与第三个点
+        this.drawLine(this.coordArr[length-1][0],this.coordArr[length-1][1],this.coordArr[length-2][0],this.coordArr[length-2][1])
+        // 连接第四个点与第一个点
+        this.drawLine(this.coordArr[length-1][0],this.coordArr[length-1][1],this.coordArr[length-4][0],this.coordArr[length-4][1])
+      }
+      break;
+    // 每个框的第一个点
+    case 1:
+      // 第一个点只需要画一个点
+      this.contextArea.fillRect(e.layerX,e.layerY,2,2)
+      break;
+    case 2:
+    // 连接第二个点与第一个点
+      this.drawLine(this.coordArr[length-1][0],this.coordArr[length-1][1],this.coordArr[length-2][0],this.coordArr[length-2][1])
+      break;
+    case 3:
+    // 连接第三个点与第二个点
+      this.drawLine(this.coordArr[length-1][0],this.coordArr[length-1][1],this.coordArr[length-2][0],this.coordArr[length-2][1])
+      break;
+  }
+}
+
+```
