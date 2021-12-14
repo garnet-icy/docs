@@ -7,3 +7,5 @@
   justify-content:center;
 }
 ```
+
+> vertical-align: middle; 与 align-item:center;
