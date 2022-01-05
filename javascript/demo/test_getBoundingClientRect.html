@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin:0;
+    padding: 0;
+  }
+  .box{
+    width: 100px;
+    height: 800px;
+    margin: 30px auto;
+    border:1px solid #333;
+  }
+</style>
+<body>
+<div id="btn" class="box">asd</div>
+<div class="box">asd</div>
+</body>
+</html>
+<script>
+  let bool = false
+  let btn = document.getElementById('btn')
+  console.log(btn.getBoundingClientRect());
+  window.addEventListener('scroll',()=>{
+    let bound = btn.getBoundingClientRect()
+    if(bound.bottom<0){
+      if(bool === false){
+        bool = true
+        console.log('划走了');
+      }
+    }else if(bound.bottom>=0){
+      if(bool === true){
+        bool = false
+        console.log('回来了');
+      }
+    }
+  })
+</script>

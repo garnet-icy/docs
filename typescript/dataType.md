@@ -309,4 +309,18 @@ class Test<T>{
     return value
   }
 }
+
+
+/**
+ * 例子
+ * 函数接收两种类型的参数，返回传递的第一个参数的类型
+*/
+function identity <T, U>(value: T, message: U) : T {
+  console.log(message);
+  return value;
+}
+
+console.log(identity<Number, string>(68, "Semlinker"));
+
 ```
+![avatar](../image/typescript/泛型.wepb)

@@ -34,3 +34,7 @@ a.flatMap( (n) =>
 ### values
 + 值的遍历
 
+### reduce
+`参数`
+![avatar](../image/js/array_reduce.png)
+**说明** initialValue可以指明第一个参数的内容
