@@ -1,6 +1,6 @@
-## 各种图片格式优缺点
+## 图片格式优缺点
 
-![](image/image.png)
+![](image/image.png "")
 
 
 ## 色度
