@@ -10,10 +10,10 @@
 *所有组件单独请求引入，先转化为virtual Dom再引入*
 
 1. webpack图示
-![avatar](../image/vite/webpack.png)
+![avatar](../../image/vite/webpack.png)
 
 1. vite图示
-![avatar](../image/vite/vite.png)
+![avatar](../../image/vite/vite.png)
 
 <p style="text-indent:2em;line-height:30px;">webpack会先打包，然后启动开发服务器，请求服务器时直接给予打包结果。</p>
 <p style="text-indent:2em;line-height:30px;">vite是直接启动开发服务器，请求哪个模块再对该模块进行实时编译。</p>

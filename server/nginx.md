@@ -1,0 +1,4 @@
+# nginx
+```bash
+start nginx
+```
