@@ -113,3 +113,5 @@ service --status-all #查看所有服务
 + docker run -d -p 8080:80 -p 443:443 ccr.ccs.tencentyun.com/discuzq/dzq:latest
 ### 注意点
 数据库用户名&&密码必须为root
+
+[docker安装discuz](https://www.cnblogs.com/weblm/p/15002058.html)
