@@ -42,4 +42,4 @@ console.log('script end')
 5. 线程为空 `async2 end`
 6. 开始执行promise队列 `promise2`
 
-**await让出的是js线程，而promise鱼setTimeout都在后面**
+**await让出的是js线程，而promise与setTimeout都在后面**

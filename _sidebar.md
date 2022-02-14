@@ -10,6 +10,10 @@
 - http
   - [缓存](http/cache.md)
 
+- interview
+  - [collect](interview/collect.md)
+  - [boss](interview/boss.md)
+
 - vue
   - [vue2基础知识](vue/vue3/knowledge.md)
   - [vue3基础知识](vue/vue2/knowledge.md)

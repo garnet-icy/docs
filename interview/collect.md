@@ -36,7 +36,7 @@ window.a = 1
 1. 可以独立部署，快速卸载
 1. 垂直组建，各司其职
 
-### web comonent规范
+### web component规范
 
 [web component官方文档](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components)
 

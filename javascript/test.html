@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
 
 </body>
+
 </html>
 <script>
-  var furthestBuilding = function(heights, bricks, ladders) {
-    // nums:当前所有要用到梯子或者砖块的高度的总和 
-    /**
-     * @param {number[]} nums
-     * @return {number}
-     */
-    let length = nums.length
-    function test(nums){
-      nums.sort((a,b)=>b-a)
-      for(var i=0;i<lad;i++){
-        nums.shift()
-      }
-      
+  var isStraight = function(nums) {
+    let m = new Map()
+    m.set('A', 1),
+    m.set('J', 11),
+    m.set('Q', 12),
+    m.set('K', 13)
+    let arr = nums.map(i => {
+      return typeof i==='string'?m.get(i):i
+    })
+    nums.sort((a,b)=>{
+      return a-b
+    })
+    let index = nums.lastIndexOf(0)
+    index = index>=0?index:0
+    console.log(index);
+    nums = index>=0?nums.splice(nums.lastIndexOf(0)+1):nums
+    if((nums[nums.length]-nums[0]-nums.length)<=index){
+      return true
+    }else{
+      return false
     }
-  };
+};
 
-  let lad = 2
-  
-  test([1,2,5,6])
+// console.log(isStraight([0,0,2,1,5]));
 
-console.log(furthestBuilding([1,5,1,2,3,4,10000],4,1));
-</script>
+
+
+var hammingWeight = function(n) {
+    let str = n.toString()
+    let oneIndex = str.split('').sort().indexOf('1')
+    return str.length-oneIndex
+};
+
+console.log('hammingWeight(0101010101): ', hammingWeight(0101010101));
+</script> 
