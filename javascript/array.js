@@ -1,12 +1,12 @@
 // filter
 let testArr = [
   {
-    name:'sina',
-    age:12,
+    name: 'sina',
+    age: 12,
   },
   {
-    name:'google',
-    age:22,
+    name: 'google',
+    age: 22,
   }
 ]
 
@@ -58,20 +58,42 @@ let testArr = [
 // console.log(i);
 
 
-function test(){
+function test() {
   var a = 1
-  return function(){
+  return function () {
     console.log(a);
   }
 }
 // test()()
 
 
-let arr = [1,2,3,4,5,6,7,8,9]
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-let newArr = arr.map(n=>{
+let newArr = arr.map(n => {
   console.log(n);
-  n<=4?[n,n+1]:[]
+  n <= 4 ? [n, n + 1] : []
 })
 console.log(arr);
 console.log(newArr);
+
+
+for (var i = 1; i <= 5; i++) {
+  (function (j) {
+    setTimeout(function timer() {
+      console.log(j)
+    }, j * 1000)
+  })(i)
+}
+
+
+
+var a = Object.prototype.toString;
+ 
+console.log(a.call(2));
+console.log(a.call(true));
+console.log(a.call('str'));
+console.log(a.call([]));
+console.log(a.call(function(){}));
+console.log(a.call({}));
+console.log(a.call(undefined));
+console.log(a.call(null));
