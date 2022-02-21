@@ -1,5 +1,6 @@
-## <center>git高级命令</center>
+## git高级命令
 1. git log 美化
+
 ```bash
 git log # 打印log
 git log --oneline # 单行输出
