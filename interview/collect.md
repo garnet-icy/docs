@@ -167,5 +167,47 @@ window.a = 1
 **并行回收**：开启辅助线程帮助回收，但还是会阻塞主线程js代码的执行
 
 
-## fetch的封装与中断请求
 
+## js中window.onload与DOMContentLoaded的区别
+```
+  onload是当页面的所有资源全部加载完后才会执行
+  DOMContentLoaded是只有DOM渲染完就回执行
+
+```
+## 未知高度元素上下左右居中
+### flex  ie11+
+```css
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+```
+### grid  ie10+
+```css
+{
+  display:grid;
+  justify-content:center;
+  align-items:center;
+}
+```
+### position 兼容性好
+```css
+{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+```
+### table-cell 兼容性好
+```css
+父元素:{
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+子元素:{
+  display:inline-block;
+}
+```
