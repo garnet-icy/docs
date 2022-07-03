@@ -17,8 +17,8 @@
   - [vue&react](interview/vue-react.md)
 
 - vue
-  - [vue2基础知识](vue/vue3/knowledge.md)
-  - [vue3基础知识](vue/vue2/knowledge.md)
+  - [vue2基础知识](vue/vue2/knowledge.md)
+  - [vue3基础知识](vue/vue3/knowledge.md)
   - [vite](vue/vue3/vite.md)
 
 - UI框架
