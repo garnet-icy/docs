@@ -19,3 +19,7 @@
   git stash list #显示做了哪些存储
   git stash show stash@{x} -p #展示某一次stash存储修改的细节，不加stash@{x}默认展示第一次，-p展示代码修改，不写-p展示文件修改
 ```
+3. 提交commit但是并未push时的恢复
+```bash
+  git reset --soft HEAD^  #将commit后恢复为add后的状态
+```
