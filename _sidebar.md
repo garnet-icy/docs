@@ -13,10 +13,12 @@
 - interview
   - [collect](interview/collect.md)
   - [boss](interview/boss.md)
+  - [手写](interview/write_function_collect.md)
+  - [vue&react](interview/vue-react.md)
 
 - vue
-  - [vue2基础知识](vue/vue3/knowledge.md)
-  - [vue3基础知识](vue/vue2/knowledge.md)
+  - [vue2基础知识](vue/vue2/knowledge.md)
+  - [vue3基础知识](vue/vue3/knowledge.md)
   - [vite](vue/vue3/vite.md)
 
 - UI框架
@@ -26,6 +28,8 @@
 - 小知识点
   - [宏任务微任务](tips/microtask-macrotask.md)
   - [几种异步处理](tips/promise-async.md)
+  - [axios-fetch](tips/axiso-fetch.md)
+
 
 - webGl
   - [class_one](webGL/class1.md)
@@ -39,6 +43,7 @@
 - git使用
   - [git命令](git/git.md)
   - [git高级命令](git/git_more.md)
+  - [git hooks](git/git_hooks.md)
 
 - electron部分配置
   - [electron介绍](electron/intro.md)

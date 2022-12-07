@@ -17,9 +17,9 @@ js底层存储数据的地方叫关联数组，是一个类似于对象的结构
 var a = 1
 window.a = 1
 ```
+两者的区别，var定义的值可以在window中找到，但不能使用delete window.a 删除
 
 ### let const var 的区别
-两者的区别，var定义的值可以在window中找到，但不能使用delete window.a 删除
 ![avatar](../image/image/内存.png)
 
 
@@ -41,8 +41,8 @@ window.a = 1
 [web component官方文档](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components)
 
 1. 模板元素（templete,slot）
-    + 模板中的内容默认是不加载的，它不在DOM结构中，需要手动加载
-    + 可以编写不在呈现页面中显示的标记模板。然后它们可以作为自定义元素结构的基础被多次重用
+  + 模板中的内容默认是不加载的，它不在DOM结构中，需要手动加载
+  + 可以编写不在呈现页面中显示的标记模板。然后它们可以作为自定义元素结构的基础被多次重用
     ```js
     // 获取父元素div
     var container=document.querySelector('#container1');
@@ -167,4 +167,47 @@ window.a = 1
 **并行回收**：开启辅助线程帮助回收，但还是会阻塞主线程js代码的执行
 
 
-## fetch的封装与中断请求
+
+## js中window.onload与DOMContentLoaded的区别
+```
+  onload是当页面的所有资源全部加载完后才会执行
+  DOMContentLoaded是只有DOM渲染完就回执行
+
+```
+## 未知高度元素上下左右居中
+### flex  ie11+
+```css
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+```
+### grid  ie10+
+```css
+{
+  display:grid;
+  justify-content:center;
+  align-items:center;
+}
+```
+### position 兼容性好
+```css
+{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+```
+### table-cell 兼容性好
+```css
+父元素:{
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+子元素:{
+  display:inline-block;
+}
+```

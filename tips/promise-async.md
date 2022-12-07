@@ -1,5 +1,6 @@
 ## promise与async看js事件流
 1. async与await
+
 `async函数返回一个promise对象，即便是常量返回也会封装为promise的resolve()的返回值`
 ```js
 async function test(){
@@ -7,7 +8,9 @@ async function test(){
 }
 console.log(test()) //Promise { 'some string' }
 ```
+
 `await会让出线程，继续执行后续代码`
+
 ```js
 // eg:
 async function async1() {

@@ -59,7 +59,7 @@ $(".translate").click(function() {
 
 ### <center>vue中的使用</center>
 
-**vue-i18n (I18N国际化)**
+**vue-i18n (I18N国际化)internationalization**
 
 > chs.json
 ```json

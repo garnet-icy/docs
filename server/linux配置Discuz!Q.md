@@ -88,6 +88,8 @@ chmod 777 discuz #更改权限，777可写
 
 > mysql配置
 ```bash
+  # 查看mysql状态（是否是启动中）
+  systemctl status mysql
   # 登录，回车后再输入密码
   mysql -u username -p
   # 设置root用户可以在任意ip登录
