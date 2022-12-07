@@ -13,3 +13,8 @@ for (let i = 1; i <= originArr.length; i++) {
 }
 return newArr;
 ```
+> 查找页面所有的函数
+```js
+  top.Object.keys(document.defaultView)
+  // 结果包含所有方法，不只是自己定义的
+```
