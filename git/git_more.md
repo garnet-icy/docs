@@ -24,3 +24,7 @@
 ```bash
   git reset --soft HEAD^  #将commit后恢复为add后的状态
 ```
+4. 查看当前分支从哪个分支拉下来的
+```bash
+  git reflog show <developer>  #查看父级分支
+```
