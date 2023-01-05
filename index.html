@@ -30,9 +30,9 @@
     </style>
   </head>
   <body>
-    <div class="myJinji">
+    <!-- <div class="myJinji">
       <code id="love-code"> 💕<span id="love-time"></span> </code>
-    </div>
+    </div> -->
     <div id="app"></div>
     <script>
       window.$docsify = {
@@ -43,7 +43,7 @@
         loadSidebar: "_sidebar.md", // true默认为sidebar.md
         loadSidebar: true,
         search: "auto",
-        hideSidebar: false,
+        hideSidebar: window.location.hash == "#/secret/secret" ? true : false,
         auto2top: true,
         homepage: "home.md",
         disqus: "shortname",
