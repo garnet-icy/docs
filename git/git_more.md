@@ -6,7 +6,8 @@
   git log --oneline # 单行输出
   git log --graph # 可查看提交历史的分支结构
   git shortlog  # 单行仅显示commit内容
-  --stat # 显示文件变更
+  git log --stat # 显示文件某一文件变更行数
+  git log --oneline --graph --decorate --all # 友好展示分支切换与合并
 ```
 2. git stash 暂存代码
 
@@ -22,4 +23,8 @@
 3. 提交commit但是并未push时的恢复
 ```bash
   git reset --soft HEAD^  #将commit后恢复为add后的状态
+```
+4. git reflog 查看当前分支从哪个分支拉下来的
+```bash
+  git reflog show <developer>  #查看父级分支
 ```
