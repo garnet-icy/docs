@@ -8,6 +8,7 @@
 
   - [数组方法](javascript/Array.md)
   - [字符串方法](javascript/string.md)
+  - [模块](javascript/module.md)
 
 - docker
 
