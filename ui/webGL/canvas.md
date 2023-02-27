@@ -1,7 +1,8 @@
-# canvas基础
+# canvas 基础
+
 **前置**
 
-**canvas**: canvas DOM节点。
+**canvas**: canvas DOM 节点。
 
 **ctx**: canvas 上下文。
 
@@ -9,36 +10,36 @@
 
 **y**: 纵向距离。
 
+> 画布配置
 
->画布配置
 ```js
 // Canvas 2D API 通过清空子路径列表开始一个新路径的方法，开启一个新路径
-ctx.beginPath()
+ctx.beginPath();
 // 绘制当前或已经存在的路径的方法，绘制
-ctx.stroke()
+ctx.stroke();
 // 从当前点到起始点绘制一条直线，如果图形已经是封闭的或者只有一个点，那么此方法不会做任何操作
-ctx.closePath()
+ctx.closePath();
 
 // 将当前状态放入栈中，保存 canvas 全部状态的方法
-ctx.save()
+ctx.save();
 
 // 还原到上次保存的状态
-ctx.restore()
+ctx.restore();
 ```
-
 
 > 上下文配置
+
 ```js
 // 线宽
-ctx.lineWidth = 10
+ctx.lineWidth = 10;
 // 画笔颜色
-ctx.strokeStyle = '#ccc'
+ctx.strokeStyle = "#ccc";
 // 填充颜色
-ctx.fillStyle = 'red'
+ctx.fillStyle = "red";
 ```
 
-
 > 操作
+
 ```js
 // 画点x，本质是填充一个矩形
 ctx.fillRect(x,y,left,right)
