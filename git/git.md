@@ -29,6 +29,7 @@
 
   git branch -D <分支名称>  #删除分支
 
+  git push origin --delete <分支名称>  #删除远程仓库分支
 
 
   git cherry-pick <commit1> <commit2> #在当前分支上合并几个commit
@@ -92,4 +93,4 @@
   git log <分支>    #远程分支log
 ```
 
-[git学习链接](https://learngitbranching.js.org)
+[git 学习链接](https://learngitbranching.js.org)
