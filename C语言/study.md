@@ -22,3 +22,15 @@ printf("%.3f\n",c)
 // 布尔值头文件
 #include <stdbool.h>
 ```
+
+## 函数
+```c
+// 定义函数
+// int: 返回int值
+// void: 没有返回值
+// float: 返回浮点数
+int TestFun(int b,int,c){
+  return b+c
+}
+```
+**1. 函数名称建议大写**
